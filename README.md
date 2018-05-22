@@ -1,2 +1,1 @@
-# TicTacToe
-c++ course university
+# Tic_Tac_Toe
