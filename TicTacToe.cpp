@@ -11,10 +11,13 @@ void TicTacToe::play(Player& xPlayer, Player& oPlayer)
 
     for(int i = 0; i < size; i++)
     {
+        
         tryPlay(xPlayer, oPlayer);
         if(w) break;
+        if(fullboard() && w==nullptr){w=&oPlayer; break;}
         tryPlay(oPlayer,xPlayer);
         if(w) break;
+        if(fullboard() && w==nullptr){w=&oPlayer; break;}
     }
 
 }
