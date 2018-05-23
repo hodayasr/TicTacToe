@@ -19,15 +19,6 @@ public:
 	}
 
 private:
-	bool fullboard()
-	{
-		for(int i = 0; i < gboard.size(); i++){
-			for(int j = 0; j < gboard.size(); j++){
-				if(gboard.mat[i][j].getSymbol() == '.')return false;
-			}
-		}
-		return true;
-	}
 	
 	bool isWinner(char c)
 	{
